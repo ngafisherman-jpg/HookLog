@@ -1416,8 +1416,8 @@ export default function HookLog() {
                       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:12}}>
                         <div style={{fontFamily:'Oswald,sans-serif',fontSize:11,color:'var(--fog)',letterSpacing:1}}>STEP {knotStep+1} OF {k.steps.length}</div>
                         <div style={{display:'flex',gap:6}}>
-                          {knotStep>0&&<button className="wp-btn" style={{padding:'5px 12px',fontSize:11}} onClick={e=>{e.stopPropagation();setKnotStep(s=>s-1);}}>< PREV</button>}
-                          {knotStep<k.steps.length-1&&<button className="wp-btn" style={{padding:'5px 12px',fontSize:11,background:'var(--moss)',border:'1px solid var(--moss-light)'}} onClick={e=>{e.stopPropagation();setKnotStep(s=>s+1);}}>NEXT ></button>}
+                          {knotStep>0&&<button className="wp-btn" style={{padding:'5px 12px',fontSize:11}} onClick={e=>{e.stopPropagation();setKnotStep(s=>s-1);}}>PREV</button>}
+                          {knotStep<k.steps.length-1&&<button className="wp-btn" style={{padding:'5px 12px',fontSize:11,background:'var(--moss)',border:'1px solid var(--moss-light)'}} onClick={e=>{e.stopPropagation();setKnotStep(s=>s+1);}}>NEXT</button>}
                           {knotStep===k.steps.length-1&&<button className="wp-btn" style={{padding:'5px 12px',fontSize:11,background:'rgba(139,195,74,.15)',border:'1px solid #8BC34A',color:'#8BC34A'}} onClick={e=>e.stopPropagation()}>[ok] DONE!</button>}
                         </div>
                       </div>
